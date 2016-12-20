@@ -1,0 +1,234 @@
+/*************
+General styles
+*************/
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	color: #111;
+	background: url('svgs/background.svg') #edeff0;
+	background-size: 53px 50px;
+}
+
+p {
+	max-width: 350px;
+	margin: 35px auto 0;
+	line-height: 2em;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #39add1;
+	font-weight: 700;
+}
+
+/***********
+Hover styles
+***********/
+
+a:hover, a:hover .nav {
+	color: #111;
+	fill: #111;
+	transform: scale(.8);
+}
+
+nav li:hover {
+    transform: scale(1.2);
+}
+a, nav li, .nav {
+	transition: .6s;
+}
+
+/************
+Header styles
+************/
+
+header {
+	padding-top: 10px;
+}
+
+header nav {
+	padding-bottom: 50px;
+	text-align: left;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+header h1 {
+	
+}
+
+/****************
+Navigation styles
+*****************/
+
+.nav {
+	fill:#39ADD1;
+}
+#menu-heart, 
+#menu-contact {
+	height: 13px;
+}
+
+#menu-location {
+	height: 14px;
+}
+
+/******************
+Main content styles
+******************/
+
+#container {
+	max-width: 960px;
+	background: #fff;
+	margin: 0 auto;
+}
+
+main {
+	padding-top: 50px;
+}
+
+main h2 {
+	font-size: 28px;
+}
+
+main ul {
+	padding: 0;
+}
+
+main li {
+	display: inline-block;
+	color: #ba8058;
+	margin-right: 20px;
+}
+
+main li img {
+	margin-bottom: 15px;
+}
+
+main li span {
+	margin-left: -40px;
+}
+
+main li:last-child {
+	margin-right: 0;
+}
+
+/************
+Footer styles
+************/
+
+footer {
+	width: 100%;
+	margin-top: 100px;
+	padding-bottom: 30px;
+	color: #ba8058;
+}
+
+/**********
+Logo styles
+**********/
+
+#logo{
+	height: 140px;
+	width: 120px;
+}
+
+.logo-circle {
+	fill:#BA8058;
+}
+
+.letter {
+	fill:#EAAA7F;
+}
+
+.foot {
+	fill:#F4C6A6;
+}
+
+.logo-text {
+	visibility: hidden;
+	font-size: 1em;
+	color: #EAAA7F;
+}
+
+/**********
+Dogs styles
+**********/
+
+#dog-red,
+#dog-fawn,
+#dog-sable,
+#dog-blacktan {
+	height: 170px;
+	width: 170px;
+}
+
+.red-ear,
+.red-head,
+.sable-eyebrow,
+.blacktan-ear,
+.blacktan-eyebrow {
+	fill:#BA8058;
+}
+
+.red-face,
+.fawn-face,
+.sable-face,
+.blacktan-face {
+	fill:#FBFEFF;
+}
+
+.red-nose,
+.red-eye,
+.fawn-nose,
+.fawn-eye,
+.sable-nose,
+.sable-eye,
+.blacktan-nose,
+.blacktan-eye {
+	fill:#2D3339;
+}
+.red-eyebrow,
+.fawn-ear,
+.fawn-head {
+	fill:#EAAA7F;
+}
+
+.fawn-eyebrow {
+	fill:#F4C6A6;
+}
+
+.sable-ear,
+.sable-head {
+	fill:#844B24;
+}
+
+.blacktan-head {
+	fill:#52595F;
+}
+
+/***********
+Media styles
+***********/
+
+@media (max-width: 419px) {
+	.logo-letters {
+		display: none;
+	}
+	.logo-text {
+		visibility: visible;
+	}
+	header nav ul li {
+		margin-bottom: 10px;
+		text-align: center;
+		display: block;
+	}
+}
